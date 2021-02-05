@@ -1,0 +1,26 @@
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+  background-color: #388e3c;
+
+  ul {
+    margin: 0 auto;
+    display: flex;
+    list-style: none;
+  }
+
+  li {
+    padding: 1rem 1.5rem;
+  }
+
+  .links {
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    border-bottom: 3px transparent solid;
+    padding-bottom: 0.5rem;
+    transition: border-color 0.5s;
+  }
+}
