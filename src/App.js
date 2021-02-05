@@ -1,8 +1,8 @@
-import "./App.css";
+import "./App.scss";
 import { Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Work from "./pages/Work";
-import Contact from "./pages/Contact";
+import Skills from "./pages/Skills";
 import Nav from "./components/nav/nav.component";
 
 function App() {
@@ -16,8 +16,8 @@ function App() {
         <Route exact path="/work">
           <Work />
         </Route>
-        <Route exact path="/contact">
-          <Contact />
+        <Route exact path="/skills">
+          <Skills />
         </Route>
         <Route path="/" component={Home} />
       </Switch>

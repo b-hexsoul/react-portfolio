@@ -1,0 +1,56 @@
+@import '../utilities';
+@import '../config';
+
+#about {
+  &-html {
+    height: 100%;
+  }
+
+  &-body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-a {
+    flex: 1 0 auto;
+
+    .about-info {
+      display: grid;
+      grid-template-areas: "bioimage bio bio" "connect connect connect";
+      grid-gap: 1.2rem;
+    }
+
+    //Grid Area
+    .bio-image {
+      grid-area: bioimage;
+
+      img {
+        border-radius: 50%;
+      }
+    }
+
+    .bio {
+      grid-area: bio;
+      border-radius: 10px;
+      border-left: 3px solid $main-color;
+
+      p {
+        font-size: 1.1rem;
+      }
+    }
+
+    .connect {
+      grid-area: connect;
+
+      &-container {
+        display: flex;
+        justify-content: space-evenly;
+
+        i.fab:hover {
+          color: $main-color;
+        }
+      }
+    }
+  }
+}
